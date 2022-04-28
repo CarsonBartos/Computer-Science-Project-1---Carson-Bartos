@@ -17,5 +17,7 @@ export default {
 body {
 	margin: 0px;
 	font-family: Arial Black;
+	background-color: rgb(25, 25, 25);
+	color: rgb(200, 200, 200);
 }
 </style>
