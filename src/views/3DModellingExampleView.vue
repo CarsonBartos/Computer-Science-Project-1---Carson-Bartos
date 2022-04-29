@@ -34,7 +34,7 @@
 <script>
 //https://stackoverflow.com/questions/47849626/import-and-use-three-js-library-in-vue-component
 import * as Three from "three";
-
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 export default {
 	data() {
 		return {
@@ -66,6 +66,25 @@ export default {
 			this.renderer = new Three.WebGLRenderer({ antialias: true });
 			this.renderer.setSize(container.clientWidth, container.clientHeight);
 			container.appendChild(this.renderer.domElement);
+
+			const loader = new GLTFLoader();
+
+			loader.load(
+				"/src/assets/TEAPOT.glb",
+				(glb) => {
+					this.scene.add(glb.scene);
+					console.log("added blender file");
+					console.log(this.scene);
+				},
+				undefined,
+				function (error) {
+					console.error(error);
+				}
+			);
+
+			const light = new Three.DirectionalLight(0xffffff, 1);
+			light.position.set(2, 2, 5);
+			scene.add(light);
 		},
 		animate: function () {
 			requestAnimationFrame(this.animate);
