@@ -55,7 +55,10 @@ export default {
 				0.01,
 				10
 			);
-			this.camera.position.z = 1;
+			this.camera.position.z = 5;
+			this.camera.position.x = 5;
+			this.camera.position.y = 5;
+			this.camera.lookAt(0, 0, 0);
 
 			let geometry = new Three.BoxGeometry(0.2, 0.2, 0.2);
 			let material = new Three.MeshNormalMaterial();
@@ -63,16 +66,14 @@ export default {
 			this.mesh = new Three.Mesh(geometry, material);
 			this.scene.add(this.mesh);
 
-			this.renderer = new Three.WebGLRenderer({ antialias: true });
-			this.renderer.setSize(container.clientWidth, container.clientHeight);
-			container.appendChild(this.renderer.domElement);
-
 			const loader = new GLTFLoader();
 
 			loader.load(
 				"/src/assets/TEAPOT.glb",
 				(glb) => {
+					console.log(glb);
 					this.scene.add(glb.scene);
+
 					console.log("added blender file");
 					console.log(this.scene);
 				},
@@ -84,13 +85,17 @@ export default {
 
 			const light = new Three.DirectionalLight(0xffffff, 1);
 			light.position.set(2, 2, 5);
-			scene.add(light);
+			this.scene.add(light);
+
+			this.renderer = new Three.WebGLRenderer({ antialias: true });
+			this.renderer.setSize(container.clientWidth, container.clientHeight);
+			container.appendChild(this.renderer.domElement);
 		},
 		animate: function () {
 			requestAnimationFrame(this.animate);
-			this.mesh.rotation.x += parseInt(this.turnSpeedX) / 1000;
-			this.mesh.rotation.y += parseInt(this.turnSpeedY) / 1000;
-			this.mesh.rotation.z += parseInt(this.turnSpeedZ) / 1000;
+			this.scene.children[2].rotation.x += parseInt(this.turnSpeedX) / 1000;
+			this.scene.children[2].rotation.y += parseInt(this.turnSpeedY) / 1000;
+			this.scene.children[2].rotation.z += parseInt(this.turnSpeedZ) / 1000;
 			this.renderer.render(this.scene, this.camera);
 		},
 	},
