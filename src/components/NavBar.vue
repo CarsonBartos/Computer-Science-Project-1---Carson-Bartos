@@ -27,6 +27,8 @@
 	flex-grow: 2;
 }
 #NavBar {
+	position: sticky;
+	top: 0;
 	padding: 8px;
 	display: flex;
 

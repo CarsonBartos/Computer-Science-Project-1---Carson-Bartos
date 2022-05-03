@@ -1,4 +1,5 @@
 <template>
+	<h2>Example of our 3D Models</h2>
 	<div class="slideContainer">
 		Turn X
 		<input
