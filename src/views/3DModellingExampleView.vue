@@ -94,9 +94,11 @@ export default {
 		},
 		animate: function () {
 			requestAnimationFrame(this.animate);
-			this.scene.children[2].rotation.x += parseInt(this.turnSpeedX) / 1000;
-			this.scene.children[2].rotation.y += parseInt(this.turnSpeedY) / 1000;
-			this.scene.children[2].rotation.z += parseInt(this.turnSpeedZ) / 1000;
+			if (this.scene.children[2]) {
+				this.scene.children[2].rotation.x += parseInt(this.turnSpeedX) / 1000;
+				this.scene.children[2].rotation.y += parseInt(this.turnSpeedY) / 1000;
+				this.scene.children[2].rotation.z += parseInt(this.turnSpeedZ) / 1000;
+			}
 			this.renderer.render(this.scene, this.camera);
 		},
 	},
