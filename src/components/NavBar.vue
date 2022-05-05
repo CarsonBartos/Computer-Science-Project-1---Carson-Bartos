@@ -33,7 +33,7 @@
 	display: flex;
 
 	align-content: center;
-	width: 100vw;
+	width: 100%;
 
 	background-color: rgb(50, 50, 50);
 }

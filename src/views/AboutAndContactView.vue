@@ -69,6 +69,11 @@
 	</p>
 </template>
 
+<style scoped>
+p {
+	font-size: 14px;
+}
+</style>
 <style>
 h2 {
 	font-size: 32px;
@@ -78,8 +83,5 @@ h3 {
 }
 h4 {
 	font-size: 18px;
-}
-p {
-	font-size: 14px;
 }
 </style>
