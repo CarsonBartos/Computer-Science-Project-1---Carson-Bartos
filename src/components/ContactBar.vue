@@ -36,7 +36,10 @@
 }
 #info {
 	display: flex;
-	flex-direction: column;
+	justify-content: space-around;
+	width: 100%;
+	padding-top: 40px;
+	padding-bottom: 50px;
 }
 #greetings {
 	text-align: center;
@@ -45,7 +48,7 @@
 </style>
 <style scoped>
 p {
-	margin: 5px;
+	margin: 0px;
 }
 h1 {
 	text-align: center;

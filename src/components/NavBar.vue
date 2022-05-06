@@ -29,7 +29,8 @@
 #NavBar {
 	position: sticky;
 	top: 0;
-	padding: 8px;
+	padding-top: 10px;
+
 	display: flex;
 
 	align-content: center;
