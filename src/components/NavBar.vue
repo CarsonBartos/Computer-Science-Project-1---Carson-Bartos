@@ -10,9 +10,7 @@
 				>3D Modelling Example
 			</RouterLink>
 
-			<RouterLink to="/AboutAndContact" style="flex-grow: 1"
-				>About and Contact</RouterLink
-			>
+			<RouterLink to="/About" style="flex-grow: 1">About</RouterLink>
 
 			<RouterLink to="/Services" style="flex-grow: 1">Services</RouterLink>
 			<RouterLink to="/Quote" style="flex-grow: 1"
