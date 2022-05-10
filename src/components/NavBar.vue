@@ -21,6 +21,9 @@
 </template>
 
 <style scoped>
+h1 {
+	padding-left: 10px;
+}
 #mid {
 	flex-grow: 2;
 }
@@ -28,7 +31,7 @@
 	position: sticky;
 	top: 0;
 	padding-top: 10px;
-
+	z-index: 50;
 	display: flex;
 
 	align-content: center;
@@ -39,6 +42,9 @@
 a {
 	color: rgb(200, 200, 200);
 	text-decoration: none;
+}
+a:hover {
+	color: rgb(250, 250, 250);
 }
 #nav {
 	flex-grow: 1;

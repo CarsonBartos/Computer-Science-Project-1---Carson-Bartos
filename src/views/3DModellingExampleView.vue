@@ -112,11 +112,12 @@ export default {
 <style scoped>
 #container {
 	width: 75vw;
-	height: 50vw;
+	height: 75vh;
 }
 
 .slider {
 	-webkit-appearance: none;
+
 	width: 50vw;
 	height: 15px;
 	border-radius: 5px;

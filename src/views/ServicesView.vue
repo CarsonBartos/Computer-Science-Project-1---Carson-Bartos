@@ -1,11 +1,9 @@
 <template>
+	<h2 id="serviceTitle">
+		Services! Doing the Job Right, these are the services offered by REAL WORLD
+	</h2>
 	<div id="cont">
-		<h2>
-			Services! Doing the Job Right, these are the services offered by REAL
-			WORLD
-		</h2>
-
-		<div id="modelling">
+		<div id="modelling" class="category">
 			<h3>MODELLING 3D DESIGN & MODELLING</h3>
 
 			<p>
@@ -17,7 +15,7 @@
 		</div>
 
 		<br />
-		<div id="graphic">
+		<div id="graphic" class="category">
 			<h3>Graphic Design</h3>
 
 			<p>
@@ -37,7 +35,7 @@
 		</div>
 		<br />
 
-		<div id="anim">
+		<div id="anim" class="category">
 			<h3>3D & Animation</h3>
 
 			<p>
@@ -53,7 +51,7 @@
 		</div>
 		<br />
 
-		<div id="photo">
+		<div id="photo" class="category">
 			<h3>Photography</h3>
 
 			<p>
@@ -75,7 +73,7 @@
 			</p>
 		</div>
 		<br />
-		<div id="printing">
+		<div id="printing" class="category">
 			<h3>3D Printing /RAPID PROTOTYPING</h3>
 
 			<p>
@@ -90,39 +88,66 @@
 		</div>
 	</div>
 </template>
-<script>
-export default {};
-</script>
+
 <style scoped>
+#serviceTitle {
+	text-align: center;
+	background-color: rgb(5, 5, 5);
+}
 #cont {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
 }
-#printing {
-	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-		url("@/assets/il_794xN.2364984458_hsct (1).webp");
-	width: 750px;
-	height: 720px;
+.category {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-content: center;
+	padding: 20px;
 }
 #modelling {
 	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
 		url("@/assets/Webp.net-resizeimage.png");
-	width: 1000px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 45%;
 	height: 520px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-content: center;
+}
+#graphic {
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+		url("@/assets/graphic-designer-at-work-color-samples-picture-id655926676-800x358.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 45%;
+	height: 520px;
 }
 #anim {
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+		url("@/assets/BlenderRobot.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 45%;
+	height: 520px;
 }
 #photo {
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+		url("@/assets/download.jfif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 45%;
+	height: 520px;
 }
+#printing {
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+		url("@/assets/il_794xN.2364984458_hsct (1).webp");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 45%;
+	height: 720px;
+}
+
 h3 {
 	text-align: center;
 }

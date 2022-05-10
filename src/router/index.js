@@ -25,8 +25,8 @@ const router = createRouter({
 		},
 		{
 			path: "/Quote",
-			name: "RequestForQuote",
-			component: () => import("../views/RequestForQuoteView.vue"),
+			name: "RequestAQuote",
+			component: () => import("../views/RequestAQuoteView.vue"),
 		},
 		{
 			path: "/Services",
