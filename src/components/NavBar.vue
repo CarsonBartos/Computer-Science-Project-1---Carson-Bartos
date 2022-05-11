@@ -28,6 +28,7 @@ h1 {
 	flex-grow: 2;
 }
 #NavBar {
+	border-radius: 0 0 20px 20px;
 	position: sticky;
 	top: 0;
 	padding-top: 10px;
@@ -46,6 +47,7 @@ a {
 a:hover {
 	color: rgb(250, 250, 250);
 }
+
 #nav {
 	flex-grow: 1;
 	display: flex;

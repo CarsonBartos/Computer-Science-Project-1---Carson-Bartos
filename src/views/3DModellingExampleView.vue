@@ -121,7 +121,7 @@ export default {
 	width: 50vw;
 	height: 15px;
 	border-radius: 5px;
-	background: rgb(50, 50, 50);
+	background: linear-gradient(to right, blue, red);
 	outline: none;
 	opacity: 0.7;
 	-webkit-transition: 0.2s;

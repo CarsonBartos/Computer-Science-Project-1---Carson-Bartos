@@ -1,7 +1,10 @@
 <template>
-	<h2 id="serviceTitle">
-		Services! Doing the Job Right, these are the services offered by REAL WORLD
-	</h2>
+	<div id="Title">
+		<h2 id="serviceTitle">
+			Services! Doing the Job Right, these are the services offered by REAL
+			WORLD
+		</h2>
+	</div>
 	<div id="cont">
 		<div id="modelling" class="category">
 			<h3>MODELLING 3D DESIGN & MODELLING</h3>
@@ -90,9 +93,13 @@
 </template>
 
 <style scoped>
+#Title {
+	display: flex;
+	justify-content: center;
+}
 #serviceTitle {
 	text-align: center;
-	background-color: rgb(5, 5, 5);
+	background-color: ;
 }
 #cont {
 	display: flex;
@@ -146,6 +153,19 @@
 	background-repeat: no-repeat;
 	width: 45%;
 	height: 720px;
+}
+#serviceTitle {
+	border-style: solid;
+	border-width: 10px;
+	border-radius: 20px;
+	border-image-slice: 1;
+	border-image-source: linear-gradient(
+		to right,
+		rgb(50, 50, 50),
+		rgb(150, 150, 150)
+	);
+	width: auto;
+	padding: 10px;
 }
 
 h3 {
