@@ -20,6 +20,25 @@ export default {
 };
 </script>
 <style>
+#titleCont {
+	display: flex;
+	justify-content: center;
+}
+#title {
+	text-align: center;
+	font-size: 35px;
+	border-style: solid;
+	border-width: 10px;
+	border-radius: 20px;
+	border-image-slice: 1;
+	border-image-source: linear-gradient(
+		to right,
+		rgb(50, 50, 50),
+		rgb(150, 150, 150)
+	);
+	width: auto;
+	padding: 10px;
+}
 body {
 	margin: 0px;
 	font-family: Arial Black;

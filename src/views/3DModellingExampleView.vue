@@ -1,5 +1,7 @@
 <template>
-	<h2>Example of our 3D Models</h2>
+	<div id="titleCont">
+		<h2 id="title">Example of our 3D Models</h2>
+	</div>
 	<div class="slideContainer">
 		Turn X
 		<input
@@ -110,6 +112,26 @@ export default {
 </script>
 
 <style scoped>
+#Title {
+	display: flex;
+	justify-content: center;
+}
+#exampleTitle {
+	text-align: center;
+
+	border-style: solid;
+	border-width: 10px;
+	border-radius: 20px;
+	border-image-slice: 1;
+	border-image-source: linear-gradient(
+		to right,
+		rgb(50, 50, 50),
+		rgb(150, 150, 150)
+	);
+	width: auto;
+	padding: 10px;
+}
+
 #container {
 	width: 75vw;
 	height: 75vh;

@@ -1,6 +1,6 @@
 <template>
-	<div id="Title">
-		<h2 id="serviceTitle">
+	<div id="titleCont">
+		<h2 id="title">
 			Services! Doing the Job Right, these are the services offered by REAL
 			WORLD
 		</h2>
@@ -93,14 +93,6 @@
 </template>
 
 <style scoped>
-#Title {
-	display: flex;
-	justify-content: center;
-}
-#serviceTitle {
-	text-align: center;
-	background-color: ;
-}
 #cont {
 	display: flex;
 	flex-wrap: wrap;
@@ -153,19 +145,6 @@
 	background-repeat: no-repeat;
 	width: 45%;
 	height: 720px;
-}
-#serviceTitle {
-	border-style: solid;
-	border-width: 10px;
-	border-radius: 20px;
-	border-image-slice: 1;
-	border-image-source: linear-gradient(
-		to right,
-		rgb(50, 50, 50),
-		rgb(150, 150, 150)
-	);
-	width: auto;
-	padding: 10px;
 }
 
 h3 {

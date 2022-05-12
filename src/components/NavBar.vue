@@ -1,6 +1,6 @@
 <template>
 	<div id="NavBar">
-		<RouterLink to="/" style="flex-grow: 1" id="title">
+		<RouterLink to="/" style="flex-grow: 1" id="Title">
 			<h1>Real World Modelling</h1>
 		</RouterLink>
 

@@ -1,6 +1,6 @@
 <template>
-	<div id="getQuoteTitle">
-		<h2>GET A QUOTE!</h2>
+	<div id="titleCont">
+		<h2 id="title">GET A QUOTE!</h2>
 	</div>
 
 	<div id="descriptionCont">
@@ -54,25 +54,6 @@
 </template>
 
 <style scoped>
-#getQuoteTitle {
-	display: flex;
-	justify-content: center;
-}
-h2 {
-	font-size: 35px;
-	border-style: solid;
-	border-width: 10px;
-	border-radius: 20px;
-	border-image-slice: 1;
-	border-image-source: linear-gradient(
-		to right,
-		rgb(50, 50, 50),
-		rgb(150, 150, 150)
-	);
-	text-align: center;
-	padding: 20px;
-}
-
 #quote {
 	border-radius: 35px 35px 0px 0px;
 	background-color: rgb(50, 50, 50);

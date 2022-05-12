@@ -1,5 +1,7 @@
 <template>
-	<h1>ABOUT REAL WORLD MODELLING</h1>
+	<div id="titleCont">
+		<h2 id="title">ABOUT REAL WORLD MODELLING</h2>
+	</div>
 
 	<h3>Make new things possible</h3>
 	<p>
@@ -46,30 +48,63 @@
 	<p>Globally competitive manufacturing, close to home.</p>
 	<br />
 	<br />
-	<h3>Our Factories</h3>
-	<p>
-		While we don't really have any factories, its like we do because we turn out
-		so much product. Build your parts in a REAL WORLD MODELLING microfactory
-		where our systems are constantly learning to optimize operations.
-	</p>
-	<p>
-		We built our infrastructure to help you make better parts faster. With
-		Canadian production centers, microfactories, and manufacturing partners
-		across the country, you always have the capacity, technology, and expertise
-		you need to get your job done right.
-	</p>
-	<br />
-	<br />
-	<h3>Sustainabilty</h3>
-	<p>Creating a more sustainable future</p>
-	<p>
-		Sustainability is one of the most important issues manufacturers face today.
-		Our customers can make more sustainable choices and see their environmental
-		impact.
-	</p>
+	<div id="aboutCont">
+		<div id="factories" class="category">
+			<h3>Our Factories</h3>
+			<p>
+				While we don't really have any factories, its like we do because we turn
+				out so much product. Build your parts in a REAL WORLD MODELLING
+				microfactory where our systems are constantly learning to optimize
+				operations.
+			</p>
+			<p>
+				We built our infrastructure to help you make better parts faster. With
+				Canadian production centers, microfactories, and manufacturing partners
+				across the country, you always have the capacity, technology, and
+				expertise you need to get your job done right.
+			</p>
+		</div>
+		<br />
+		<br />
+		<div class="category" id="sustain"></div>
+		<h3>Sustainabilty</h3>
+		<p>Creating a more sustainable future</p>
+		<p>
+			Sustainability is one of the most important issues manufacturers face
+			today. Our customers can make more sustainable choices and see their
+			environmental impact.
+		</p>
+	</div>
 </template>
 
 <style scoped>
+.category {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	padding: 20px;
+}
+#aboutCont {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+}
+#factories {
+	width: 45%;
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+		url("@/assets/brooklyn-makerbot-factory-4.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#sustain {
+	width: 45%;
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+		url("@/assets/brooklyn-makerbot-factory-4.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
 p {
 	font-size: 14px;
 }
