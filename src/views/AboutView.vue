@@ -66,14 +66,15 @@
 		</div>
 		<br />
 		<br />
-		<div class="category" id="sustain"></div>
-		<h3>Sustainabilty</h3>
-		<p>Creating a more sustainable future</p>
-		<p>
-			Sustainability is one of the most important issues manufacturers face
-			today. Our customers can make more sustainable choices and see their
-			environmental impact.
-		</p>
+		<div class="category" id="sustain">
+			<h3>Sustainabilty</h3>
+			<p>Creating a more sustainable future</p>
+			<p>
+				Sustainability is one of the most important issues manufacturers face
+				today. Our customers can make more sustainable choices and see their
+				environmental impact.
+			</p>
+		</div>
 	</div>
 </template>
 
@@ -92,14 +93,16 @@
 	justify-content: center;
 }
 #factories {
-	width: 45%;
+	width: 47%;
+	height: 500px;
 	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
 		url("@/assets/brooklyn-makerbot-factory-4.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 #sustain {
-	width: 45%;
+	width: 47%;
+	height: 500px;
 	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
 		url("@/assets/brooklyn-makerbot-factory-4.jpg");
 	background-size: cover;

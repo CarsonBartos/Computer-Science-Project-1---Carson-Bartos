@@ -39,8 +39,12 @@ export default {
 	width: auto;
 	padding: 10px;
 }
+p {
+	padding: 5px;
+}
 body {
 	margin: 0px;
+
 	font-family: Arial Black;
 	background-color: rgb(25, 25, 25);
 	color: rgb(200, 200, 200);

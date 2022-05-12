@@ -15,7 +15,7 @@
 
 	<div id="quote">
 		<br /><br />
-		<h3>3D Modelling Services and Prices</h3>
+		<h3 id="quoteTitle">3D Modelling Services and Prices</h3>
 		<br />
 		<p>
 			TYPE 1: 3D Modelling Landscapes, Nature, Insects, Public spaces Natural
@@ -54,6 +54,9 @@
 </template>
 
 <style scoped>
+#quoteTitle {
+	text-align: center;
+}
 #quote {
 	border-radius: 35px 35px 0px 0px;
 	background-color: rgb(50, 50, 50);
